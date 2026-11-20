@@ -1,0 +1,18 @@
+{
+  "short_name": "AgroSync",
+  "name": "AgroSync AI - Intelligent Supply Chain",
+  "description": "Intelligent Farmer-to-Processor Supply Chain Platform",
+  "icons": [
+    {
+      "src": "/leaf.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#F8FAF7",
+  "theme_color": "#166534",
+  "display": "standalone",
+  "orientation": "portrait"
+}

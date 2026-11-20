@@ -1,0 +1,77 @@
+{
+  "model_name": "AgroSync Yield Predictor",
+  "algorithm": "Pure Random Forest Regressor (35 Estimators, Depth 9)",
+  "version": "rf-yield-v1.2.0",
+  "trained_at": "2026-11-20T15:35:45.843796+00:00",
+  "samples_trained": 960,
+  "samples_tested": 240,
+  "metrics": {
+    "r2_score": 0.8296,
+    "mae_kg": 19652.46,
+    "rmse_kg": 33485.03,
+    "mean_test_target_kg": 84699.59,
+    "relative_error_pct": 23.2
+  },
+  "top_feature_importances": [
+    {
+      "feature": "crop_name_Sugarcane",
+      "importance": 0.3523
+    },
+    {
+      "feature": "cultivation_area",
+      "importance": 0.3278
+    },
+    {
+      "feature": "crop_name_Green Chilli",
+      "importance": 0.0489
+    },
+    {
+      "feature": "rainfall_mm",
+      "importance": 0.0366
+    },
+    {
+      "feature": "temperature_celsius",
+      "importance": 0.0353
+    },
+    {
+      "feature": "irrigation_type_Rainfed",
+      "importance": 0.0347
+    },
+    {
+      "feature": "days_to_harvest",
+      "importance": 0.0346
+    },
+    {
+      "feature": "crop_name_Onion",
+      "importance": 0.0181
+    }
+  ],
+  "supported_crops": [
+    "Cabbage",
+    "Carrot",
+    "Green Chilli",
+    "Onion",
+    "Potato",
+    "Sugarcane",
+    "Tomato"
+  ],
+  "supported_soils": [
+    "Alluvial",
+    "Black Cotton",
+    "Clay",
+    "Loamy",
+    "Red Sandy"
+  ],
+  "supported_irrigations": [
+    "Canal",
+    "Drip",
+    "Rainfed",
+    "Sprinkler"
+  ],
+  "supported_seasons": [
+    "Kharif",
+    "Rabi",
+    "Zaid"
+  ],
+  "disclosure": "Trained on an agronomic simulation dataset calibrated against ICAR/FAO regional horticultural yield benchmarks. Evaluated on a held-out 20% test split."
+}
